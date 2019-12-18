@@ -1,0 +1,26 @@
+generator photon {
+  provider = "photonjs"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_URL")
+}
+
+model Maker {
+  id              String      @default(cuid()) @id
+  createdAt       DateTime    @default(now())
+  name            String
+  state           MakerArgs       // cause photon gen problems in index.d.ts
+  // state        MakerEnumArgs   // ok
+}
+
+enum MakerArgs {
+  FOO
+  BAR
+}
+
+// enum MakerEnumArgs {
+//   FOO
+//   BAR
+// }
