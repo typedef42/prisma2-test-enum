@@ -1,4 +1,4 @@
-# prisma2 SqlState("42P01") error when running tests
+# prisma2 enum naming - photon generation problem
 
 ## how to init & prepare docker pgsql
 
