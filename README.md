@@ -9,7 +9,7 @@ yarn run db:up
 ```
 
 
-## how to run in dev (witch works)
+## how to run in dev 
 
 ```shell
 yarn run db:dev
